@@ -20,3 +20,23 @@ Student::~Student() { //destructor
   delete[] secondName;
 }
 
+//get methods:
+int Student::getId() {
+}
+float Student::getGpa() {
+}
+char* Student::getFirstN() {
+}
+char* Student::getSecondN() {
+}
+
+//set methods:
+void Student::setId(int newId) {
+}
+void Student::setGpa(float newGpa) {
+}
+void Student::getFirstN(char newFirstN[20]){
+}
+void Student::getSecondN(char newSecN[20]) {
+}
+
