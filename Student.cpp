@@ -22,21 +22,31 @@ Student::~Student() { //destructor
 
 //get methods:
 int Student::getId() {
+  return id;
 }
 float Student::getGpa() {
+  return gpa;
 }
 char* Student::getFirstN() {
+  return firstName;
 }
 char* Student::getSecondN() {
+  return secondName;
 }
 
 //set methods:
 void Student::setId(int newId) {
+  id = newId;
 }
 void Student::setGpa(float newGpa) {
+  gpa = newGpa;
 }
 void Student::getFirstN(char newFirstN[20]){
+  firstName = new char[20];
+  strcpy(firstName, newFirstN);
 }
 void Student::getSecondN(char newSecN[20]) {
+  secondName = new char[20];
+  strcpy(secondName, newSecN);
 }
 
