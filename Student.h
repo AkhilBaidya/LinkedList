@@ -11,6 +11,18 @@ class Student {
 
   //destructor:
   ~Student();
+
+  //get methods:
+  int getId();
+  float getGpa();
+  char* getFirstN();
+  char* getSecondN();
+
+  //set methods:
+  void setId(int newId);
+  void setGpa(float newGpa);
+  void setFirstN(char newFirstN[20]);
+  void setSecondN(char newSecN[20]);
  
  protected:
   //fields
