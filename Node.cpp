@@ -10,7 +10,7 @@ Node::Node(Student* theStudent) {
 }
 //destructor:
 Node::~Node(){
-  delete nextNode;
+  nextNode = NULL; //help from Mr. Galbraith - don't want to delete entire chain of nodes by delete nextNode
   delete student;
 }
 //get methods:
