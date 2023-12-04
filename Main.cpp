@@ -38,11 +38,37 @@ int main(){
   cout << stud1 -> getFirstN() << " ";
   cout << stud1 -> getSecondN() << endl;
 
+  //check if setting new name breaks anything:
+  char newN[20] = "Goliath";
+  stud1 -> setSecondN(newN);
+
+  cout << "New Name: ";
+  cout << stud1 -> getFirstN() << " ";
+  cout << stud1 -> getSecondN() << endl;
+
   cout << "Id: ";
   cout << stud1 -> getId() << endl;
 
   cout <<"GPA: ";
   cout << stud1 -> getGpa() << endl;
+
+
+  //CHECK setNext() and getNext():
+  node1 -> setNext(node2);
+  node2 -> setNext(node3);
+
+  cout << "Who's in the node after node 1?" << endl;
+  cout << node1 -> getNext() -> getStudent() -> getFirstN() << " " << node1 -> getNext() -> getStudent() -> getSecondN() << endl;
+
+  cout << "Who's in the node after node 2?" << endl;
+  cout << node2 -> getNext() -> getStudent() -> getFirstN() << " " << node2 -> getNext() -> getStudent() -> getSecondN() << endl;
+
+  //set next node to something else (see if this works):
+  node1 -> setNext(node3);
+
+  cout << "But now...the person in the node after node 2 is also after node 1. They are: " << endl;
+  cout << node1 -> getNext() -> getStudent() -> getFirstN() << " " << node1 -> getNext() -> getStudent() -> getSecondN() << endl;
+
   
   return 0;
 }
