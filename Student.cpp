@@ -41,11 +41,11 @@ void Student::setId(int newId) {
 void Student::setGpa(float newGpa) {
   gpa = newGpa;
 }
-void Student::getFirstN(char newFirstN[20]){
+void Student::setFirstN(char newFirstN[20]){
   firstName = new char[20];
   strcpy(firstName, newFirstN);
 }
-void Student::getSecondN(char newSecN[20]) {
+void Student::setSecondN(char newSecN[20]) {
   secondName = new char[20];
   strcpy(secondName, newSecN);
 }
