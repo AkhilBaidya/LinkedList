@@ -53,7 +53,7 @@ int main(){
   cout << stud1 -> getGpa() << endl;
 
 
-  //CHECK setNext() and getNext():
+  //TESTING setNext() and getNext():
   node1 -> setNext(node2);
   node2 -> setNext(node3);
 
@@ -69,6 +69,15 @@ int main(){
   cout << "But now...the person in the node after node 2 is also after node 1. They are: " << endl;
   cout << node1 -> getNext() -> getStudent() -> getFirstN() << " " << node1 -> getNext() -> getStudent() -> getSecondN() << endl;
 
-  
+
+  //TESTING DESTRUCTORS:
+  cout << "deleting first node" << endl;
+  delete node1;
+  cout << "deleting second node" << endl;
+  delete node2;
+  cout << "deleting third node" << endl;
+  delete node3;
+
+  cout << "Amazing! If you reached this point, all of the nodes are now deleted." << endl;
   return 0;
 }
