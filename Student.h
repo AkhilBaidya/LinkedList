@@ -1,3 +1,15 @@
+//C++ Programming: Linked List Part 1 - Student Class Header
+//by Akhil Baidya
+
+//Submission Date: 12/4/2023
+
+/*This file lists the methods and fields specific to a Student Class object.
+A student has an integer id, a float gpa, and character arrays for their first
+and last names. These fields can be get and set with their respective methods.
+Additionally, this class contains a constructor and destructor for the Student
+Class Object.
+ */
+
 #include <iostream>
 #include <cstring>
 
@@ -6,26 +18,29 @@ using namespace std;
 class Student {
 
  public:
-  //constructor:
-  Student(int theId, float theGpa, char theFirstN[20], char theSecN[20]);
 
-  //destructor:
+  //Constructor (defines a student with some id, gpa, first, and last name):
+  Student(int theId, float theGpa, char theFirstN[20], char theSecN[20]);
+  
+  //Destructor:
   ~Student();
 
-  //get methods:
-  int getId();
-  float getGpa();
-  char* getFirstN();
-  char* getSecondN();
+  //Get methods:
+  int getId(); //get the student id
+  float getGpa(); //get the student gpa
+  char* getFirstN(); //get the student's first name
+  char* getSecondN(); //get the student's last name
 
-  //set methods:
-  void setId(int newId);
-  void setGpa(float newGpa);
-  void setFirstN(char newFirstN[20]);
-  void setSecondN(char newSecN[20]);
+  //Set methods:
+  void setId(int newId); //set the student id
+  void setGpa(float newGpa); //set the student gpa
+  void setFirstN(char newFirstN[20]); //set the student's first name
+  void setSecondN(char newSecN[20]); //set the student's second name
  
  protected:
-  //fields
+  
+  //These are the fields unique to the Student Class:
+
   int id;
   float gpa;
   char* firstName;
