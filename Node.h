@@ -24,7 +24,7 @@ class Node {
   Node(Student* theStudent); //specify the student object the node will refer to
 
   //Destructor:
-  ~Node();
+  ~Node(); //received help from Mr. Galbraith in realizing I need to set nextNode = NULL in deconstructor (do not want to delete the entire chain of nodes in my main code by deleting nextNode)
 
   //Get methods:
   Node* getNext(); //get the next node (that this node points to)
